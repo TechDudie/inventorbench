@@ -9,7 +9,7 @@ minetest.register_craft({
 })
 minetest.register_node("inventorbench:bench", {
 	description = "Inventor Bench",
-	tile_images = {"inventor_bench.png"},
+	tile_images = {"inventor_bench_top.png","inventor_bench_side.png","inventor_bench_side.png","inventor_bench_side.png","inventor_bench_side.png","inventor_bench.png"},
 	is_ground_content = true,
 	groups = {oddly_breakable_by_hand=1},
 	sounds = default.node_sound_stone_defaults(),
@@ -37,6 +37,6 @@ minetest.register_abm({
 	if invlist = {"default:steel_ingot 3", "default:stick 2"} then
 		inv:remove_item("default:steel_ingot 3")
 		inv:remove_item("default:stick 2")
-		inv:add_item("inventor-bench:stairpick")
+		inv:add_item("inventorbench:stairpick")
     end
 })
