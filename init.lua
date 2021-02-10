@@ -23,7 +23,7 @@ minetest.register_node("inventorbench:bench", {
 		meta:set_string("infotext", "Inventor Bench")
 		local inv = meta:get_inventory()
 		inv:set_size("main", 3*3)
-	end,
+	end
 })
 minetest.register_abm({
     nodenames = {"inventorbench:bench"},
