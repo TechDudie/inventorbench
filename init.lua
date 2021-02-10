@@ -34,9 +34,10 @@ minetest.register_abm({
 	local meta = minetest.get_meta(pos)
 	local inv = meta:get_inventory()
 	local invlist = inv:get_list("main")
-	if invlist = {"default:steel_ingot 3", "default:stick 2"} then
+	if invlist == {"default:steel_ingot 3", "default:stick 2"} then
 		inv:remove_item("default:steel_ingot 3")
 		inv:remove_item("default:stick 2")
 		inv:add_item("inventorbench:stairpick")
+	end
     end
 })
